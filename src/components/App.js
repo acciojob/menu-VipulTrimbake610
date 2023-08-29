@@ -97,26 +97,26 @@ const App = () => {
         <li id="filter-btn-4" onClick={() => setStatus1("Shakes")}>Shakes</li>
       </ul>
 
-        <div className="menu-item-all">
+        <div data-test-id="menu-item-all">
       {
         status1 === 'All' &&
             <All data={arr} />
         }
         </div>
-        <div className="menu-item-breakfast">
+        <div data-test-id="menu-item-breakfast">
 
       {
         status1 === 'Breakfast' &&
         <Breakfast data={arr} />
       }
       </div>
-      <div className="menu-item-lunch">
+      <div data-test-id="menu-item-lunch">
       {
         status1 === 'Lunch' &&
         <Lunch data={arr} />
       } 
       </div>
-      <div className="menu-item-shakes">
+      <div data-test-id="menu-item-shakes">
       {
         status1 === 'Shakes' &&
         <Shakes data={arr} />
